@@ -15,12 +15,12 @@ git_interpolation=(
 )
 
 git_commands=(
-    "#(CURRENT_DIR)/scripts/git_color_bg.sh)"
-    "#(CURRENT_DIR)/scripts/git_color_fg.sh)"
-    "#(CURRENT_DIR)/scripts/git_color_status_bg.sh)"
-    "#(CURRENT_DIR)/scripts/git_color_status_fg.sh)"
-    "#(CURRENT_DIR)/scripts/git_icon.sh)"
-    "#(CURRENT_DIR)/scripts/git_branch.sh)"
+    "#(CURRENT_DIR/scripts/git_color_bg.sh)"
+    "#(CURRENT_DIR/scripts/git_color_fg.sh)"
+    "#(CURRENT_DIR/scripts/git_color_status_bg.sh)"
+    "#(CURRENT_DIR/scripts/git_color_status_fg.sh)"
+    "#(CURRENT_DIR/scripts/git_icon.sh)"
+    "#(CURRENT_DIR/scripts/git_branch.sh)"
 )
 
 set_tmux_option() {
