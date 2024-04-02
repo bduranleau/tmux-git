@@ -24,15 +24,15 @@ git_commands=(
 )
 
 set_tmux_option() {
-    local option="$1"
-    local value="$2"
+    local option=$1
+    local value=$2
     tmux set-option -gq "$option" "$value"
 }
 
 do_interpolation() {
     local all_interpolated="$1"
     for ((i=0; i < ${#git_commands[@]}; i++)); do
-        all_interpolated=${all_interpolated//${git_interpolation[i]}/${git_commands[i]}}
+        all_interpolated=${all_interpolated//${git_interpolation[$i]}/${git_commands[$i]}}
     done
     echo "$all_interpolated"
 }
